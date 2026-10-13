@@ -1,4 +1,4 @@
-Subject: Mission Valley 1 Bed with In-Unit Laundry
+Subject: Mission Valley 1 Bed with Washer and Dryer
 Preview text: $2,550/month, available November 15. 0.3 miles from the Green Line trolley.
 
 Hi there,
@@ -7,10 +7,7 @@ Do laundry at home, cool off with central air and end the day on your private ba
 
 **Home highlights**
 - 1 bedroom, 1 bathroom · approx. 720 sq ft
-- In-unit washer and dryer
-- Central air conditioning
 - Kitchen with quartz countertops
-- Private balcony
 - Access to a pool and gym
 
 **Lease details**

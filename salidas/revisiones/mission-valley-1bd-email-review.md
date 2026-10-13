@@ -1,28 +1,40 @@
-# Review: mission-valley-1bd-email.md
+# Review: mission-valley-1bd-email.md (re-review)
 
 **Content type:** email (tenant audience)
-**VERDICT: APPROVED WITH CHANGES**
+**VERDICT: APPROVED**
 **PUBLISH-READY: YES**
 
-| # | Severity | Original text | Problem | Rule (marca.md section) | Suggested fix |
-|---|----------|---------------|---------|-------------------------|---------------|
-| 1 | MINOR | "Mission Valley 1 Bed with In-Unit Laundry" (Subject) and "In-unit washer and dryer" (highlights) | Tenant-facing copy; "Preferred vocabulary" says to avoid "unit". `ejemplos.md` uses "In-unit", but `marca.md` is the rule. | Preferred vocabulary | Subject: "Mission Valley 1 Bed with Washer and Dryer" (42 chars). Bullet: "Washer and dryer inside the home" |
-| 2 | MINOR | "Home highlights" list repeating laundry, central air and balcony already in the opening | The brief asks for a short body; 6 highlights + 7 lease bullets read like the full listing. | Writing style + launch email rule (short body) | Keep only highlights not in the opening: "1 bedroom, 1 bathroom · approx. 720 sq ft", "Kitchen with quartz countertops", "Access to a pool and gym". Keep all lease details, including the pet line and assistance-animal note. |
+No problems found.
 
-**Summary:** 0 critical · 0 major · 2 minor
+**Summary:** 0 critical · 0 major · 0 minor
+
+## Previous fixes
+- **Fix 1 (remove "unit"): applied.** Subject now reads "Mission Valley 1 Bed with Washer and Dryer" (42 characters). "unit" no longer appears anywhere. The opening still covers the washer and dryer ("Do laundry at home").
+- **Fix 2 (shorter highlights): applied.** 3 highlights, none repeating the opening: "1 bedroom, 1 bathroom · approx. 720 sq ft", "Kitchen with quartz countertops", "Access to a pool and gym". All 7 lease detail lines remain, including the assistance-animal note.
 
 ## Checks performed
-- **Fair Housing:** passes. Describes the home, not a person. Assistance-animal note present (no dogs). Equal Housing Opportunity line present.
-- **Original data match:** passes. Rent $2,550, deposit $2,550, November 15, 2026, 12-month lease, up to 2 cats / $500 deposit / no pet rent / no dogs, SDG&E and internet paid by resident, water and trash included, 1 covered garage space, 720 sq ft, all 6 features, 0.3 miles to the Green Line trolley, DRE #00000000, (619) 555-0123, https://growpm.example/tour, leasing@growpm.example.
-- **Invented or unverified data:** none.
-- **Email rules:** Subject 41 chars (max 50). Preview text 75 chars (max 90). One CTA button with the correct link. No emojis. Ends with "Grow Property Management · CA DRE #00000000 · Equal Housing Opportunity".
-- **Style:** no exclamation points, no ALL CAPS, no hype words, only publishable text.
+1. **Fair Housing:** passes. Describes the home, never a resident. No protected-class or source-of-income references. Dogs restricted; "(assistance animals welcome per applicable law)" present. Ends with the Equal Housing Opportunity line.
+2. **Original data match:** passes. No placeholders, no changed values:
+   - 1 bed / 1 bath, Mission Valley
+   - Rent $2,550/month and deposit $2,550
+   - Available November 15, 2026, 12-month lease
+   - Up to 2 cats, $500 additional deposit, no monthly pet rent, no dogs
+   - Resident pays SDG&E and internet; water and trash included
+   - 1 covered garage space, 720 sq ft
+   - All 6 features (washer/dryer, central air and balcony in the opening; the rest in the highlights)
+   - 0.3 miles from the Green Line trolley
+   - CA DRE #00000000, (619) 555-0123, https://growpm.example/tour, leasing@growpm.example
+3. **Invented or unverified data:** none. Only distance is 0.3 miles (given). "approx." on 720 sq ft matches `ejemplos.md` and does not change the value.
+4. **Email rules:** Subject 42 chars (max 50). Preview text 75 chars (max 90). Short body. Exactly one CTA, `[Button: Schedule a showing](https://growpm.example/tour)`. Ends with "Grow Property Management · CA DRE #00000000 · Equal Housing Opportunity".
+5. **Brand voice and vocabulary:** passes. Warm and practical; no "Avoid" words.
+6. **Style:** passes. No exclamation points, ALL CAPS, emojis or passive voice. Only publishable text.
 
 ## Pending — Required (block publishing)
 - None
 
 ## Pending — Optional (do not block publishing)
-- Trolley station name.
-- Optional landmark line such as "close to Fashion Valley" (no number), only if more local flavor is wanted.
+- None. The trolley station name could still be added if the user provides it.
 
-**Next step:** Apply fixes 1–2 (overwrite the same file), then recheck.
+**Note:** The redactor listed the fictional license as Required. It is not counted as Required here: the user gave CA DRE #00000000 and it appears exactly as given. Swap in the company's real license number before any real-world use.
+
+**Next step:** Finished.
