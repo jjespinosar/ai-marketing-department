@@ -28,14 +28,13 @@ Home highlights:
 
 📞 Call (619) 555-0123 to schedule a showing.
 
-Grow Property Management · CA DRE #[LICENSE] · Equal Housing Opportunity
+Grow Property Management · CA DRE #00000000 · Equal Housing Opportunity
 
 #SanDiegoRentals #MissionValley #SanDiegoLiving #SanDiegoApartments
 
 ---
 
 ## Missing information
-- [LICENSE] — CA DRE license number. The brief listed "#00000000", which looks like a dummy value; kept as a placeholder so a fake number is not published. Replace with the real license number.
 - Cat deposit amount — not provided. The post says "additional deposit" without an amount. Add it if you want it in the post.
 - Showing/application link — not provided. The call to action uses only the phone number. If you have a booking page, add it ("link in bio" for Instagram, a direct URL for Facebook). That would mean small per-platform edits.
 - Trolley station name — not provided, so no station is named, as requested.

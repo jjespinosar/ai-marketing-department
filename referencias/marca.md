@@ -50,7 +50,7 @@
 | home, residence            | unit (in tenant-facing copy)   |
 | residents                  | occupants                      |
 | bright, updated, spacious  | stunning, breathtaking, dream  |
-| 0.3 miles from, 3 blocks from | walking distance, walkable, steps from, a short walk to, nearby (see section 7) |
+| 0.3 miles from, 3 blocks from (user-given); close to (no distance given) | walking distance, walkable, steps from, a short walk to, nearby (see section 7) |
 | primary bedroom            | master bedroom                 |
 | rental, lease              | "deal of the century"          |
 
@@ -74,12 +74,13 @@ Describe the **property and its features**, never the type of person who should 
 
 ## 7. Distance rule
 
-Always describe location with **measurable distances**, never with phrases that depend on how someone gets around.
+Describe location with **measurable distances**, never with phrases that depend on how someone gets around.
 
-- ✅ Use: "0.3 miles from the beach", "3 blocks from Crystal Pier", "1.5 miles from Balboa Park"
-- ✅ Drive times are OK when labeled and approximate: "about 15 minutes by car to downtown"
+- **Only use distances the user gave.** Never take a distance from research, reference files or estimates.
+- ✅ Use (when the user gave the number): "0.3 miles from the beach", "3 blocks from Crystal Pier", "1.5 miles from Balboa Park"
+- ✅ Drive times are OK only when the user gave them, labeled and approximate: "about 15 minutes by car to downtown"
+- **If the user did not give the distance, write "close to [PLACE]"** — no number and no placeholder (e.g. "close to Fashion Valley"). Never use `[X] miles` placeholders.
 - ❌ Avoid: "walking distance", "walkable", "a short walk to", "steps from the sand", "walk 3 blocks", "nearby", "close by", "minutes away" (without a unit or mode)
-- If the exact distance is unknown, use a placeholder: `[X] miles from [PLACE]`.
 - Exception: "walk-in closet" and "Ocean Front Walk" (a place name) are property features or names, not distances, and are fine.
 
 ## 8. Standard listing structure
@@ -94,10 +95,11 @@ Always describe location with **measurable distances**, never with phrases that 
 
 **Real features over bullet count.** "Never invent data" takes priority over "4–7 bullets".
 - Home highlights contain only real features provided by the user (or confirmed in tagged research). Never create a bullet with a placeholder (no `[KITCHEN FEATURES]`, `[ADDITIONAL FEATURE]`, etc.).
-- If there are fewer than 4 real features, write the ones that exist and ask for more features in the draft's "Missing information" section.
+- If there are fewer than 4 real features, write the ones that exist and ask for more features as a pending item (outside the draft — drafts contain only publishable text).
 - Placeholders are used only for:
   - **Required lease data:** deposit, available date, lease term, pets, utilities, license.
-  - **Measurable data:** square footage and distances.
+  - **Square footage:** `[SQ FT]`.
+- Distances never use placeholders (see "Distance rule").
 
 ## 9. Visual identity (reference for future agents)
 

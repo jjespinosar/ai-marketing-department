@@ -11,9 +11,9 @@ Preview text: $2,550/month, available November 15. 0.3 miles from the Green Line
 
 Hi there,
 
-Thanks for your interest in our 1 bed / 1 bath apartment in Mission Valley. Here is a quick look at the home and how to see it in person.
-
 Do laundry at home, cool off with central air and end the day on your private balcony. The Green Line trolley station is 0.3 miles from your door.
+
+Here is a quick look at this 1 bed / 1 bath home in Mission Valley and how to see it in person.
 
 **Home highlights**
 - 1 bedroom, 1 bathroom · approx. 720 sq ft

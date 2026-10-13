@@ -50,6 +50,8 @@ Full guide: `referencias/marca.md`.
 7. **Neighborhood data in `vecindarios.md` is approximate** and for creative context only. Do not publish specific statistics (rents, prices, school ratings, crime) without the user verifying them.
 8. Keep outputs organized: save all deliverables inside `salidas/` (see Project structure).
 9. **Never overwrite silently.** Before overwriting a file that already exists in `salidas/` (yourself or through a subagent), tell the user which file will be replaced and commit its current version first (`git add <file>` + `git commit -m "Backup: <file> before overwrite"`) so it can be recovered. The subagents cannot run git, so check for existing files *before* delegating.
+   **One file per text:** never create `-v2` / `-v3` files. To correct a text, commit the current draft and its review, then overwrite the same files. Git keeps the history.
+   **Drafts contain only publishable text.** Pending items (Required / Optional) go in the redactor's response and in the review report, never in the draft.
 10. **Commit configuration changes.** Whenever `CLAUDE.md`, `README.md`, `referencias/`, `.claude/agents/` or `.claude/skills/` is modified, make a commit when the task is done, with a message that describes the change (example: `"marca.md: add hashtag rules"`).
 
 ## Workflow
@@ -77,7 +79,7 @@ Typical flow: `investigador` → `planificador` → `redactor` → `revisor`.
 
 Skill files live in `.claude/skills/[name]/SKILL.md`.
 
-**Quality vs. completeness:** the VERDICT measures quality; the PUBLISH-READY line measures completeness. A text can be APPROVED and still PUBLISH-READY: NO while placeholders remain. Publish only when both are positive.
+**Quality vs. completeness:** the VERDICT measures quality; the PUBLISH-READY line measures completeness. A text can be APPROVED and still PUBLISH-READY: NO while placeholders or "Required" pending items remain. Publish only when both are positive.
 
 ## Project structure
 
