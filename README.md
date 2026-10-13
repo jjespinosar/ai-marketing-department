@@ -18,6 +18,7 @@ Un **"departamento de marketing con IA"** para **Grow Property Management**, una
 | `referencias/vecindarios.md` | Información general de 5 vecindarios de San Diego. |
 | `referencias/ejemplos.md` | 2 anuncios modelo bien escritos. |
 | `.claude/agents/` | Los 4 agentes del departamento. |
+| `.claude/skills/` | Skills: flujos completos que se activan con una sola petición. |
 | `salidas/` | Resultados: `investigacion/`, `planes/`, `borradores/` y `revisiones/`. |
 
 ### Los agentes
@@ -31,10 +32,19 @@ Un **"departamento de marketing con IA"** para **Grow Property Management**, una
 
 Flujo: `investigador` → `planificador` → `redactor` → `revisor`. **Todo texto del redactor debe pasar por el revisor antes de darse por terminado.**
 
+### Skills
+
+| Skill | Cuándo se usa | Qué produce |
+|---|---|---|
+| `lanzar-propiedad` | Cuando entregas los datos de una propiedad nueva y quieres sus textos de lanzamiento. | Anuncio, correo para inquilinos y post para Instagram/Facebook en `salidas/borradores/`, una revisión de cada uno en `salidas/revisiones/`, una tabla resumen y un commit `Lanzamiento: [slug]`. |
+
+Ejemplo: *"Lanza esta propiedad: condo 1 bed / 1 bath en Mission Valley, $2,450 al mes, depósito $2,450, disponible el 1 de noviembre…"* (o escribe `/lanzar-propiedad` seguido de los datos).
+
 ### Reglas clave
 - Los textos finales de marketing se escriben **en inglés**.
 - Las explicaciones al usuario se dan **en español**.
 - Todo anuncio debe cumplir con las leyes de **vivienda justa (Fair Housing)**.
+- El proyecto usa **Git**: antes de sobrescribir un archivo de `salidas/`, Claude avisa y guarda la versión actual en un commit.
 
 ### Cómo usarlo
 Abre el proyecto con Claude Code y pide, por ejemplo: *"Usa el redactor para escribir un anuncio de un 2 recámaras en Hillcrest"*. Después, el revisor revisará el texto.
@@ -55,6 +65,7 @@ An **"AI marketing department"** for **Grow Property Management**, a fictional p
 | `referencias/vecindarios.md` | General information on 5 San Diego neighborhoods. |
 | `referencias/ejemplos.md` | 2 well-written model listings. |
 | `.claude/agents/` | The department's 4 agents. |
+| `.claude/skills/` | Skills: complete workflows triggered by a single request. |
 | `salidas/` | Outputs: `investigacion/`, `planes/`, `borradores/` and `revisiones/`. |
 
 ### The agents
@@ -68,10 +79,19 @@ An **"AI marketing department"** for **Grow Property Management**, a fictional p
 
 Flow: `investigador` → `planificador` → `redactor` → `revisor`. **Every text from the writer must pass the reviewer before it is finished.**
 
+### Skills
+
+| Skill | When to use | Produces |
+|---|---|---|
+| `lanzar-propiedad` | When you provide the details of a new property and want its launch texts. | Listing, tenant email and Instagram/Facebook post in `salidas/borradores/`, one review each in `salidas/revisiones/`, a summary table and a commit `Lanzamiento: [slug]`. |
+
+Example: *"Launch this property: 1 bed / 1 bath condo in Mission Valley, $2,450/month, $2,450 deposit, available November 1…"* (or type `/lanzar-propiedad` followed by the details).
+
 ### Key rules
 - Final marketing copy is written **in English**.
 - Explanations to the user are given **in Spanish**.
 - Every listing must comply with **Fair Housing** laws.
+- The project uses **Git**: before overwriting a file in `salidas/`, Claude warns you and commits the current version.
 
 ### How to use it
 Open the project in Claude Code and ask, for example: *"Use the redactor to write a listing for a 2-bedroom in Hillcrest"*. The reviewer then checks the text.

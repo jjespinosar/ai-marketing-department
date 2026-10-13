@@ -49,6 +49,8 @@ Full guide: `referencias/marca.md`.
 6. **Include required details in listings**: rent, deposit, availability date, pet policy, utilities, and the company license line `Grow Property Management · CA DRE #[LICENSE]`.
 7. **Neighborhood data in `vecindarios.md` is approximate** and for creative context only. Do not publish specific statistics (rents, prices, school ratings, crime) without the user verifying them.
 8. Keep outputs organized: save all deliverables inside `salidas/` (see Project structure).
+9. **Never overwrite silently.** Before overwriting a file that already exists in `salidas/` (yourself or through a subagent), tell the user which file will be replaced and commit its current version first (`git add <file>` + `git commit -m "Backup: <file> before overwrite"`) so it can be recovered. The subagents cannot run git, so check for existing files *before* delegating.
+10. **Commit configuration changes.** Whenever `CLAUDE.md`, `README.md`, `referencias/`, `.claude/agents/` or `.claude/skills/` is modified, make a commit when the task is done, with a message that describes the change (example: `"marca.md: add hashtag rules"`).
 
 ## Workflow
 
@@ -67,6 +69,14 @@ Typical flow: `investigador` → `planificador` → `redactor` → `revisor`.
 
 **Mandatory review rule:** every text written by the `redactor` must be reviewed by the `revisor` before it is considered finished. A text is finished only when the verdict is APPROVED, or APPROVED WITH CHANGES and those changes have been applied. A REJECTED text goes back to the `redactor` and is reviewed again.
 
+## Skills
+
+| Skill              | Use when                                                                 | Produces |
+|--------------------|--------------------------------------------------------------------------|----------|
+| `lanzar-propiedad` | The user gives the details of a new property and wants its launch texts | Listing, tenant email and social post in `salidas/borradores/`, one review each in `salidas/revisiones/`, a summary table and a commit `Lanzamiento: [slug]` |
+
+Skill files live in `.claude/skills/[name]/SKILL.md`.
+
 **Quality vs. completeness:** the VERDICT measures quality; the PUBLISH-READY line measures completeness. A text can be APPROVED and still PUBLISH-READY: NO while placeholders remain. Publish only when both are positive.
 
 ## Project structure
@@ -75,12 +85,16 @@ Typical flow: `investigador` → `planificador` → `redactor` → `revisor`.
 marketing-ia-propiedades/
 ├── CLAUDE.md                ← this file (project context and rules)
 ├── README.md                ← project overview (Spanish + English)
+├── .gitignore               ← files Git ignores
 ├── .claude/
-│   └── agents/
-│       ├── investigador.md  ← researcher
-│       ├── planificador.md  ← content planner
-│       ├── redactor.md      ← copywriter
-│       └── revisor.md       ← reviewer (read-only)
+│   ├── agents/
+│   │   ├── investigador.md  ← researcher
+│   │   ├── planificador.md  ← content planner
+│   │   ├── redactor.md      ← copywriter
+│   │   └── revisor.md       ← reviewer (read-only)
+│   └── skills/
+│       └── lanzar-propiedad/
+│           └── SKILL.md     ← new-property launch (listing + email + post)
 ├── referencias/
 │   ├── marca.md             ← brand guide
 │   ├── vecindarios.md       ← 5 San Diego neighborhoods
