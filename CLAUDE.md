@@ -55,6 +55,7 @@ Full guide: `referencias/marca.md`.
 10. **Commit configuration changes.** Whenever `CLAUDE.md`, `README.md`, `referencias/`, `.claude/agents/` or `.claude/skills/` is modified, make a commit when the task is done, with a message that describes the change (example: `"marca.md: add hashtag rules"`).
 11. **Delegation: pass the user's request verbatim.** When you hand a task to a subagent, send the user's request word for word. Any context or assumption you add goes in a separate section titled **"Added by orchestrator"**. Agents may mark something as "given" only if it appears in the user's original request; anything that comes only from "Added by orchestrator" is "assumed".
 12. **Legal review is required.** Any text that talks about laws, security deposits, rent caps, fees or charges, or owner and tenant rights needs review by a person with legal knowledge. The `revisor` lists it as the pending item **"Required: legal review"**, which blocks PUBLISH-READY until the user confirms in writing that the review was done. The `planificador` flags these items in its plan, and the `investigador` puts legal facts under "Facts to verify".
+13. **Commit every finished deliverable.** When a deliverable in `salidas/` is finished (research report, plan, draft, review report), commit it with a message that says what it is (example: `"Plan: noviembre 2026 Pacific Beach"`). The subagents cannot run git, so the main conversation makes this commit. This adds to rule 9 (backup commit before overwriting); it does not replace it.
 
 ## Workflow
 
