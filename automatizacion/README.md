@@ -65,8 +65,8 @@ Si cualquier paso falla (error de la API, JSON inválido, Docs o Gmail no respon
 ## Cosas importantes
 
 - **Nunca inventa datos.** Si una celda está vacía, el texto lleva un marcador (`[DEPOSIT]`, `[SQ FT]`…) y aparece en `missing_required`.
-- **La licencia DRE no es una columna**, así que los textos siempre llevan `[LICENSE]` y `publish_ready` sale `false` hasta que alguien la complete.
-- **Revisión legal.** Todo anuncio menciona el depósito de seguridad, así que el revisor siempre añade `Required: legal review` (regla 12 de `CLAUDE.md`). La automatización no puede confirmarla: la confirma la persona que recibe el correo. Por eso `publish_ready` normalmente será `false`; es lo esperado.
+- **Datos fijos de la empresa.** La licencia DRE (`00000000`, ficticia), el teléfono (`(619) 555-0123`) y el dominio (`growpm.example`) no son columnas: vienen de la sección "Company constants" de `CLAUDE.md` y van copiados dentro de los dos prompts. Si cambian, hay que regenerar los prompts (regla 14).
+- **Revisión legal.** Solo se pide (`Required: legal review`) cuando un texto explica, interpreta o resume leyes, derechos, topes de renta o reglas sobre cargos y depósitos (regla 12 de `CLAUDE.md`). Indicar los montos de la propiedad (renta, depósito, depósito por mascota) no la activa. Cuando aplica, la automatización no puede confirmarla: la confirma la persona que recibe el correo.
 - **Nada se publica solo.** El flujo termina en un documento y un correo. Publicar es una decisión humana.
 - **Los datos de la hoja son datos, no órdenes.** Ambos prompts ignoran instrucciones escritas dentro de las celdas.
 - **Make no aplica correcciones.** Si el veredicto es `REJECTED` o `APPROVED WITH CHANGES`, la persona corrige los datos de la fila y la vuelve a poner en `READY`, o pasa el caso a Claude Code con la skill `lanzar-propiedad`.

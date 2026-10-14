@@ -36,6 +36,18 @@ Tagline: **"Local experts. Easy leasing."**
 
 Full guide: `referencias/marca.md`.
 
+## Company constants
+
+Fixed company data. Agents, skills and the API prompts in `automatizacion/` take these values from here. They count as **given facts** in every text: never replace them with a placeholder and never change them.
+
+| Constant | Value | Use |
+|----------|-------|-----|
+| CA DRE license | `00000000` (fictional) | Compliance line: `Grow Property Management · CA DRE #00000000 · Equal Housing Opportunity` |
+| Phone | `(619) 555-0123` | Calls to action and contact blocks |
+| Domain (example) | `growpm.example` | Web links and company email addresses (e.g. `growpm.example/rentals`, `leasing@growpm.example`) |
+
+All three values are fictional placeholders for this project. Replace them here (and regenerate the API prompts, rule 14) before any real publication. Property-specific data (showing link, contact email) still comes from the user for each property.
+
 ## General rules
 
 1. **All final marketing copy is written in English** (listings, emails, social posts, web copy, ads).
@@ -46,7 +58,7 @@ Full guide: `referencias/marca.md`.
    - `referencias/ejemplos.md` — model listings to imitate in structure and quality
 4. **Fair Housing compliance is mandatory.** Describe the *property*, never the ideal *person*. Do not mention or imply preferences about race, color, religion, sex, disability, familial status, national origin, or California-protected classes (source of income, sexual orientation, gender identity, marital status, age, etc.). Avoid phrases like "perfect for families", "ideal for young professionals", "no Section 8", "adults only", "Christian neighborhood". See the full list in `marca.md`.
 5. **Do not invent facts.** If a price, square footage, date or amenity is missing, use a clear placeholder like `[PRICE]` or `[SQ FT]` and tell the user.
-6. **Include required details in listings**: rent, deposit, availability date, pet policy, utilities, and the company license line `Grow Property Management · CA DRE #[LICENSE]`.
+6. **Include required details in listings**: rent, deposit, availability date, pet policy, utilities, and the company license line `Grow Property Management · CA DRE #00000000 · Equal Housing Opportunity` (see Company constants).
 7. **Neighborhood data in `vecindarios.md` is approximate** and for creative context only. Do not publish specific statistics (rents, prices, school ratings, crime) without the user verifying them.
 8. Keep outputs organized: save all deliverables inside `salidas/` (see Project structure).
 9. **Never overwrite silently.** Before overwriting a file that already exists in `salidas/` (yourself or through a subagent), tell the user which file will be replaced and commit its current version first (`git add <file>` + `git commit -m "Backup: <file> before overwrite"`) so it can be recovered. The subagents cannot run git, so check for existing files *before* delegating.
@@ -54,7 +66,7 @@ Full guide: `referencias/marca.md`.
    **Drafts contain only publishable text.** Pending items (Required / Optional) go in the redactor's response and in the review report, never in the draft.
 10. **Commit configuration changes.** Whenever `CLAUDE.md`, `README.md`, `referencias/`, `.claude/agents/` or `.claude/skills/` is modified, make a commit when the task is done, with a message that describes the change (example: `"marca.md: add hashtag rules"`).
 11. **Delegation: pass the user's request verbatim.** When you hand a task to a subagent, send the user's request word for word. Any context or assumption you add goes in a separate section titled **"Added by orchestrator"**. Agents may mark something as "given" only if it appears in the user's original request; anything that comes only from "Added by orchestrator" is "assumed".
-12. **Legal review is required.** Any text that talks about laws, security deposits, rent caps, fees or charges, or owner and tenant rights needs review by a person with legal knowledge. The `revisor` lists it as the pending item **"Required: legal review"**, which blocks PUBLISH-READY until the user confirms in writing that the review was done. The `planificador` flags these items in its plan, and the `investigador` puts legal facts under "Facts to verify".
+12. **Legal review is required — only for legal content.** A text needs review by a person with legal knowledge **only when it explains, interprets or summarizes** laws, owner or tenant rights, rent caps, or rules about fees, charges and deposits (examples: what AB 1482 allows, how just-cause eviction works, when a deposit must be returned, which fees are legal). It does **not** apply when the text only states the property's own data — rent, security deposit amount, pet deposit, pet rent or other fee amounts — or the mandatory compliance phrases (the Equal Housing Opportunity line and "(assistance animals welcome per applicable law)"). When it applies, the `revisor` lists it as the pending item **"Required: legal review"**, which blocks PUBLISH-READY until the user confirms in writing that the review was done. The `planificador` flags these items in its plan, and the `investigador` puts legal facts under "Facts to verify".
 13. **Commit every finished deliverable.** When a deliverable in `salidas/` is finished (research report, plan, draft, review report), commit it with a message that says what it is (example: `"Plan: noviembre 2026 Pacific Beach"`). The subagents cannot run git, so the main conversation makes this commit. This adds to rule 9 (backup commit before overwriting); it does not replace it.
 14. **Keep the API prompts in sync.** Whenever `CLAUDE.md`, anything in `referencias/`, `.claude/agents/redactor.md` or `.claude/agents/revisor.md` changes (or the field checklist of `.claude/skills/lanzar-propiedad/SKILL.md`, which defines the CSV columns), regenerate `automatizacion/prompt-redactor-api.md` and `automatizacion/prompt-revisor-api.md` (and `plantilla-propiedades.csv` if the fields changed) so they stay self-contained, commit them together with the change, and tell the user in Spanish that the prompts were regenerated and must be pasted again into the Make modules.
 

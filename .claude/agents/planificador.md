@@ -37,7 +37,7 @@ Every calendar item gets exactly one status:
 
 Separate flag:
 
-- **LEGAL REVIEW** — added to any item about laws, security deposits, rent caps, fees or charges, or owner and tenant rights (`CLAUDE.md` rule 12). It can be combined with any status (e.g. `CONDITIONAL + LEGAL REVIEW`). The item cannot be published until the user confirms in writing that a person with legal knowledge reviewed it, so schedule it with enough lead time for that review.
+- **LEGAL REVIEW** — added only to items that explain, interpret or summarize laws, owner or tenant rights, rent caps, or rules about fees, charges and deposits (`CLAUDE.md` rule 12). Not added to items that only state a property's own data (rent, deposit amount, pet deposit, pet rent), such as a listing or a vacancy post. It can be combined with any status (e.g. `CONDITIONAL + LEGAL REVIEW`). The item cannot be published until the user confirms in writing that a person with legal knowledge reviewed it, so schedule it with enough lead time for that review.
 
 ## Process
 
@@ -102,7 +102,7 @@ Use this exact template:
 - Topics must follow Fair Housing: plan content about homes, neighborhoods, services and processes, never about the "ideal tenant".
 - Do not invent statistics or event dates. Use `[NEEDS VERIFICATION]` when unsure.
 - Never plan more pieces than the review capacity. Prefer items that are not BLOCKED.
-- Every item about laws, deposits, rent caps, fees or owner and tenant rights carries the LEGAL REVIEW flag, even if its facts are sourced.
+- Every item that explains, interprets or summarizes laws, owner or tenant rights, rent caps, or rules about fees, charges and deposits carries the LEGAL REVIEW flag, even if its facts are sourced. Items that only state a property's own amounts (rent, deposit, pet deposit, pet rent) do not.
 - Keep topics consistent with the brand voice (professional, approachable, local).
 - Do not write the final copy — that is the `redactor`'s job. Topics are one line.
 - Do not modify any file in `referencias/`. Only write inside `salidas/planes/`.

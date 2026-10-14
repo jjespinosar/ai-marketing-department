@@ -34,9 +34,9 @@ The home is 3 blocks from the coffee shops, restaurants and breweries on 30th St
 - Parking: 1 driveway space
 
 **Schedule a showing**
-Book a self-guided or in-person tour at growpm.example/rentals or call (619) XXX-XXXX.
+Book a self-guided or in-person tour at growpm.example/rentals or call (619) 555-0123.
 
-*Grow Property Management · CA DRE #[LICENSE] · Equal Housing Opportunity*
+*Grow Property Management · CA DRE #00000000 · Equal Housing Opportunity*
 
 **Why it works**
 - The headline gives beds/baths, a unique feature and the neighborhood.
@@ -78,9 +78,9 @@ Crystal Pier and the boardwalk are 3 blocks west. Garnet Avenue's restaurants an
 - Parking: 1 assigned garage space
 
 **Apply in minutes**
-Tour this home and apply online at growpm.example/rentals or text (619) XXX-XXXX.
+Tour this home and apply online at growpm.example/rentals or text (619) 555-0123.
 
-*Grow Property Management · CA DRE #[LICENSE] · Equal Housing Opportunity*
+*Grow Property Management · CA DRE #00000000 · Equal Housing Opportunity*
 
 **Why it works**
 - Every distance is measurable ("3 blocks", "0.4 miles", "about 1 mile") instead of "walking distance" or "steps from the sand".

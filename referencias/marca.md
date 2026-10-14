@@ -68,7 +68,7 @@ Describe the **property and its features**, never the type of person who should 
 
 **Always include in listings:**
 - Equal Housing Opportunity statement or logo
-- `Grow Property Management · CA DRE #[LICENSE]`
+- `Grow Property Management · CA DRE #00000000` (license from "Company constants" in `CLAUDE.md`)
 
 **Pets vs. assistance animals:** if a listing says "no pets", add "(assistance animals welcome per applicable law)".
 
@@ -97,7 +97,7 @@ Describe location with **measurable distances**, never with phrases that depend 
 - Home highlights contain only real features provided by the user (or confirmed in tagged research). Never create a bullet with a placeholder (no `[KITCHEN FEATURES]`, `[ADDITIONAL FEATURE]`, etc.).
 - If there are fewer than 4 real features, write the ones that exist and ask for more features as a pending item (outside the draft — drafts contain only publishable text).
 - Placeholders are used only for:
-  - **Required lease data:** deposit, available date, lease term, pets, utilities, license.
+  - **Required lease data:** deposit, available date, lease term, pets, utilities.
   - **Square footage:** `[SQ FT]`.
 - Distances never use placeholders (see "Distance rule").
 
@@ -110,11 +110,13 @@ Describe location with **measurable distances**, never with phrases that depend 
 - **Fonts:** headings in a clean sans-serif (e.g., Montserrat), body in an easy-to-read sans-serif (e.g., Open Sans)
 - **Photography:** natural light, real San Diego settings, people shown diversely and in a natural way
 
-## 10. Contact block (placeholder)
+## 10. Contact block
+
+License, phone and domain come from "Company constants" in `CLAUDE.md`. Address and ZIP are still pending.
 
 ```
 Grow Property Management
 [ADDRESS], San Diego, CA [ZIP]
-(619) [XXX-XXXX] · leasing@growpm.example
-CA DRE #[LICENSE] · Equal Housing Opportunity
+(619) 555-0123 · leasing@growpm.example
+CA DRE #00000000 · Equal Housing Opportunity
 ```

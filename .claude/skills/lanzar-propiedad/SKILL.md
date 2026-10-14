@@ -71,7 +71,7 @@ The draft file holds **only the publishable text** (no header, no notes, no "Mis
 - Short body: the home's strongest benefits, key lease facts (rent, available date), and one clear next step.
 - One call-to-action button, written as `[Button: Schedule a showing](SHOWING LINK)` with the user's link (or `[SHOWING LINK]` if it is missing).
 - **No emojis.**
-- End with the compliance line: `Grow Property Management · CA DRE #[LICENSE] · Equal Housing Opportunity`.
+- End with the compliance line: `Grow Property Management · CA DRE #00000000 · Equal Housing Opportunity` (license from "Company constants" in `CLAUDE.md`).
 
 **c) Social post for Instagram and Facebook** → `[slug]-post.md`
 - **One single text** that works on both platforms.
