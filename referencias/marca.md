@@ -49,10 +49,12 @@
 |----------------------------|--------------------------------|
 | home, residence            | unit (in tenant-facing copy)   |
 | residents                  | occupants                      |
-| bright, updated, spacious  | stunning, breathtaking, dream  |
-| 0.3 miles from, 3 blocks from (user-given); close to (no distance given) | walking distance, walkable, steps from, a short walk to, nearby (see section 7) |
+| bright, updated, spacious (only when the user's data says so — see rule below) | stunning, breathtaking, dream  |
+| 0.3 miles from, 3 blocks from (given distance); close to [PLACE] (no distance given) | walking distance, walkable, steps from, a short walk to, nearby, close by (see section 7) |
 | primary bedroom            | master bedroom                 |
 | rental, lease              | "deal of the century"          |
+
+**Descriptive words need data.** Use "bright", "updated", "spacious" — or any other descriptive adjective or feature — only when the user's data says so (the same word or a clear equivalent, e.g. "lots of natural light" → "bright"). Never add a feature or adjective that is not in the data (e.g. "bright", "updated", "in the building", "overlooking the pool"). Lifestyle imagery built on a real feature is fine: "morning coffee on your balcony" when the data lists a balcony.
 
 ## 6. Fair Housing — mandatory rules
 
@@ -76,12 +78,11 @@ Describe the **property and its features**, never the type of person who should 
 
 Describe location with **measurable distances**, never with phrases that depend on how someone gets around.
 
-- **Only use distances the user gave.** Never take a distance from research, reference files or estimates.
-- ✅ Use (when the user gave the number): "0.3 miles from the beach", "3 blocks from Crystal Pier", "1.5 miles from Balboa Park"
-- ✅ Drive times are OK only when the user gave them, labeled and approximate: "about 15 minutes by car to downtown"
-- **If the user did not give the distance, write "close to [PLACE]"** — no number and no placeholder (e.g. "close to Fashion Valley"). Never use `[X] miles` placeholders.
-- ❌ Avoid: "walking distance", "walkable", "a short walk to", "steps from the sand", "walk 3 blocks", "nearby", "close by", "minutes away" (without a unit or mode)
-- Exception: "walk-in closet" and "Ocean Front Walk" (a place name) are property features or names, not distances, and are fine.
+- **Only use distances the user gave.** Never take a distance from research, reference files, general knowledge or estimates.
+- **Given distance:** "0.3 miles from the beach", "3 blocks from Crystal Pier". Drive times only when given, labeled and approximate: "about 15 minutes by car to downtown".
+- **No distance given → write "close to [PLACE]"** (e.g. "close to Fashion Valley"): no number, no placeholder. Never write `[X] miles`. **"close to [PLACE]" is the correct wording, not a banned phrase — never flag it.**
+- **Banned:** "walking distance", "walkable", "a short walk to", "steps from", "walk 3 blocks", "nearby", "close by", "minutes away". "close by" (banned) is not the same as "close to [PLACE]" (correct).
+- **Fine:** "walk-in closet" (a feature) and "Ocean Front Walk" (a place name) are not distances.
 
 ## 8. Standard listing structure
 

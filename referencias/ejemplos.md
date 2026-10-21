@@ -2,6 +2,8 @@
 
 Two examples of well-written Grow listings. Use them as a reference for structure, tone and level of detail — not to copy word for word. All properties and data are fictional.
 
+In both examples, every feature, descriptive adjective ("charming", "bright", "updated", "light-filled") and distance was given by the owner. Never reuse them for another property unless that property's data says so ("Descriptive words need data" and "Distance rule" in `marca.md`).
+
 ---
 
 ## Example 1 — North Park bungalow (house)

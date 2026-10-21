@@ -95,7 +95,7 @@ Typical flow: `investigador` → `planificador` → `redactor` → `revisor`.
 
 Skill files live in `.claude/skills/[name]/SKILL.md`.
 
-**Quality vs. completeness:** the VERDICT measures quality; the PUBLISH-READY line measures completeness. A text can be APPROVED and still PUBLISH-READY: NO while placeholders or "Required" pending items remain (including "Required: legal review", see rule 12). Publish only when both are positive.
+**Quality vs. completeness:** the VERDICT measures quality; the PUBLISH-READY line measures completeness. A text can be APPROVED and still PUBLISH-READY: NO while placeholders or "Required" pending items remain (including "Required: legal review", see rule 12). PUBLISH-READY can be YES only when the verdict is APPROVED: with APPROVED WITH CHANGES or REJECTED it is always NO, until the fixes are applied and a new review returns APPROVED. Publish only when both are positive.
 
 ## Project structure
 
