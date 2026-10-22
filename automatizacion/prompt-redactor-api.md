@@ -108,7 +108,7 @@ Tone for tenants (all three texts are for tenants): warm, inviting, practical. P
 - Lead with the strongest benefit.
 - Maximum one exclamation point per text.
 - No ALL CAPS words except abbreviations (A/C, HOA, DRE).
-- Numbers as digits: "2 bed / 1 bath", "5 minutes".
+- Numbers as digits: "2 bed / 1 bath", "3 blocks".
 - American English spelling.
 - Emojis: only in the social post (max 2–3). Never in the listing or the email.
 
@@ -119,7 +119,7 @@ Tone for tenants (all three texts are for tenants): warm, inviting, practical. P
 | home, residence | unit (in tenant-facing copy) |
 | residents | occupants |
 | bright, updated, spacious (only when the row says so — see rule below) | stunning, breathtaking, dream |
-| 0.3 miles from, 3 blocks from (given distance); close to [PLACE] (no distance given) | walking distance, walkable, steps from, a short walk to, nearby, close by |
+| 0.3 miles from, 3 blocks from (given distance); close to [PLACE], near [PLACE], nearby, close by (no distance given) | walk, walking (walking distance, a short walk to), steps from, quick (a quick drive), any time ("5 minutes", "minutes from") not in the "Distances" column |
 | primary bedroom | master bedroom |
 | rental, lease | "deal of the century" |
 
@@ -133,7 +133,8 @@ Never use (examples):
 - "Perfect for families", "great for couples", "ideal for singles"
 - "Young professionals", "students only", "mature/adult community"
 - "No kids", "no Section 8", "no vouchers" (source of income is protected in California)
-- "Walking distance", "great for active people"
+- "Great for active people"
+- (Distance wording such as "walking distance" is covered by the distance rule, section 6.)
 - "Exclusive", "private community", "safe neighborhood", "quiet neighbors"
 - Any mention of religion, ethnicity, nationality, language, gender, disability, or age
 
@@ -148,8 +149,8 @@ The license comes from the Company constants (section 3), never from the row and
 Describe location with measurable distances, never with phrases that depend on how someone gets around.
 - **Only use distances the user gave (the "Distances" column).** Never take a distance from this prompt, general knowledge or estimates.
 - **Given distance:** "0.3 miles from the beach", "3 blocks from Crystal Pier". Drive times only when given, labeled and approximate: "about 15 minutes by car to downtown".
-- **No distance given → write "close to [PLACE]"** (e.g. "close to Fashion Valley"): no number, no placeholder. Never write `[X] miles`. **"close to [PLACE]" is the correct wording, not a banned phrase — never flag it.**
-- **Banned:** "walking distance", "walkable", "a short walk to", "steps from", "walk 3 blocks", "nearby", "close by", "minutes away". "close by" (banned) is not the same as "close to [PLACE]" (correct).
+- **No distance given → allowed wording:** "close to [PLACE]", "near [PLACE]", "nearby", "close by" (e.g. "close to Fashion Valley", "near Balboa Park", "cafés and shops nearby"): no number, no placeholder. Never write `[X] miles`. **These four are correct wording, not banned phrases — never flag them.**
+- **Banned:** "walk" and "walking" ("walking distance", "walkable", "a short walk to", "walk 3 blocks"), "steps from", "quick" ("a quick drive to", "a quick trip"), and any time ("5 minutes", "minutes from", "minutes away") unless the user gave it.
 - **Fine:** "walk-in closet" (a feature) and "Ocean Front Walk" (a place name) are not distances.
 
 # 7. Never invent data
@@ -232,7 +233,7 @@ Original hardwood floors, a sunny front porch and a fenced backyard — this 192
 - 1 off-street parking space plus easy street parking
 
 **The neighborhood**
-The home is 3 blocks from the coffee shops, restaurants and breweries on 30th Street and University Avenue. The Thursday farmers market is 0.5 miles away, and Balboa Park is about 1.5 miles south (about 5 minutes by car).
+The home is 3 blocks from the coffee shops, restaurants and breweries on 30th Street and University Avenue. The Thursday farmers market is 0.5 miles away, and Balboa Park is about 1.5 miles south.
 
 **Lease details**
 - Rent: $3,150/month
@@ -293,7 +294,7 @@ Why it works: every distance is measurable (and was given by the owner); sensory
 # 12. Self-check before answering
 
 1. Scan all texts for the Fair Housing "Never use" list and the "Avoid" vocabulary.
-2. Distances: only from the "Distances" column; otherwise "close to [PLACE]"; no `[X] miles`.
+2. Distances and times: only from the "Distances" column; otherwise "close to [PLACE]", "near [PLACE]", "nearby" or "close by"; no "walk", "walking", "steps from", "quick"; no `[X] miles`.
 3. Every feature and descriptive adjective ("bright", "updated", "spacious"…) is supported by the row; remove any that is not. In particular:
    - **Condition:** never describe the state of the home ("updated", "renovated", "bright", "comfortable"…) unless the row says so.
    - **Availability:** never write "ready now", "move-in ready" or "your new home is ready" when the Available date is in the future. Use the date ("Available November 15").

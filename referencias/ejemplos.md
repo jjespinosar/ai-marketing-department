@@ -24,7 +24,7 @@ Original hardwood floors, a sunny front porch and a fenced backyard — this 192
 - 1 off-street parking space plus easy street parking
 
 **The neighborhood**
-The home is 3 blocks from the coffee shops, restaurants and breweries on 30th Street and University Avenue. The Thursday farmers market is 0.5 miles away, and Balboa Park is about 1.5 miles south (about 5 minutes by car).
+The home is 3 blocks from the coffee shops, restaurants and breweries on 30th Street and University Avenue. The Thursday farmers market is 0.5 miles away, and Balboa Park is about 1.5 miles south.
 
 **Lease details**
 - Rent: $3,150/month
@@ -43,7 +43,7 @@ Book a self-guided or in-person tour at growpm.example/rentals or call (619) 555
 **Why it works**
 - The headline gives beds/baths, a unique feature and the neighborhood.
 - The opening line sells the feeling in one sentence; facts follow in bullets.
-- Neighborhood references are specific and real (30th Street, Balboa Park), with measurable distances instead of "close by".
+- Neighborhood references are specific and real (30th Street, Balboa Park), with measurable distances the owner gave. Without a given distance, "close to Balboa Park" or "near Balboa Park" would be the right wording — never a drive time the owner did not give.
 - It describes the home, not the "ideal tenant" — Fair Housing compliant.
 - All key lease facts are easy to find.
 

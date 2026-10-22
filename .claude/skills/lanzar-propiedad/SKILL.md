@@ -85,7 +85,7 @@ The `redactor` saves each text to the path you gave it. Confirm the three files 
 
 ## Step 6 — Review each text with the `revisor`
 
-Call the `revisor` agent **separately for each text**, passing the file path, the **original data block verbatim** and the `redactor`'s pending list. The `revisor` compares the text with the original data (a given fact shown as a placeholder or with a different value is CRITICAL) and lists the pending items as **Required** / **Optional**. The `revisor` is read-only: save each report yourself to `salidas/revisiones/` as `[file-name]-review.md`:
+Call the `revisor` agent **separately for each text**, passing the file path, the **original data block verbatim** and the `redactor`'s pending list. The `revisor` compares the text with the original data (a given fact with a different value is CRITICAL; shown as a placeholder, MAJOR) and lists the pending items as **Required** / **Optional**. The `revisor` is read-only: save each report yourself to `salidas/revisiones/` as `[file-name]-review.md`:
 
 - `[slug]-anuncio-review.md`
 - `[slug]-email-review.md`

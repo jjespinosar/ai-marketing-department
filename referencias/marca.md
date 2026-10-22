@@ -39,7 +39,7 @@
 - Lead with the strongest benefit.
 - Maximum one exclamation point per piece.
 - No ALL CAPS words except abbreviations (A/C, HOA, DRE).
-- Numbers as digits: "2 bed / 1 bath", "5 minutes".
+- Numbers as digits: "2 bed / 1 bath", "3 blocks".
 - American English spelling.
 - Emojis: allowed only on social media, max 2–3 per post, never in listings or emails to owners.
 
@@ -50,7 +50,7 @@
 | home, residence            | unit (in tenant-facing copy)   |
 | residents                  | occupants                      |
 | bright, updated, spacious (only when the user's data says so — see rule below) | stunning, breathtaking, dream  |
-| 0.3 miles from, 3 blocks from (given distance); close to [PLACE] (no distance given) | walking distance, walkable, steps from, a short walk to, nearby, close by (see section 7) |
+| 0.3 miles from, 3 blocks from (given distance); close to [PLACE], near [PLACE], nearby, close by (no distance given) | walk, walking (walking distance, a short walk to), steps from, quick (a quick drive), any time ("5 minutes", "minutes from") the user did not give (see section 7) |
 | primary bedroom            | master bedroom                 |
 | rental, lease              | "deal of the century"          |
 
@@ -64,7 +64,9 @@ Describe the **property and its features**, never the type of person who should 
 - "Perfect for families", "great for couples", "ideal for singles"
 - "Young professionals", "students only", "mature/adult community" (unless a legally qualified senior community)
 - "No kids", "no Section 8", "no vouchers" (source of income is protected in California)
-- "Walking distance", "great for active people" (see the distance rule in section 7)
+- "Great for active people"
+
+Distance wording ("walking distance", "steps from"…) is covered by the distance rule in section 7, not by this list.
 - "Exclusive", "private community", "safe neighborhood", "quiet neighbors"
 - Any mention of religion, ethnicity, nationality, language, gender, disability, or age
 
@@ -80,8 +82,8 @@ Describe location with **measurable distances**, never with phrases that depend 
 
 - **Only use distances the user gave.** Never take a distance from research, reference files, general knowledge or estimates.
 - **Given distance:** "0.3 miles from the beach", "3 blocks from Crystal Pier". Drive times only when given, labeled and approximate: "about 15 minutes by car to downtown".
-- **No distance given → write "close to [PLACE]"** (e.g. "close to Fashion Valley"): no number, no placeholder. Never write `[X] miles`. **"close to [PLACE]" is the correct wording, not a banned phrase — never flag it.**
-- **Banned:** "walking distance", "walkable", "a short walk to", "steps from", "walk 3 blocks", "nearby", "close by", "minutes away". "close by" (banned) is not the same as "close to [PLACE]" (correct).
+- **No distance given → allowed wording:** "close to [PLACE]", "near [PLACE]", "nearby", "close by" (e.g. "close to Fashion Valley", "near Balboa Park", "cafés and shops nearby"): no number, no placeholder. Never write `[X] miles`. **These four are correct wording, not banned phrases — never flag them.**
+- **Banned:** "walk" and "walking" ("walking distance", "walkable", "a short walk to", "walk 3 blocks"), "steps from", "quick" ("a quick drive to", "a quick trip"), and any time ("5 minutes", "minutes from", "minutes away") unless the user gave it.
 - **Fine:** "walk-in closet" (a feature) and "Ocean Front Walk" (a place name) are not distances.
 
 ## 8. Standard listing structure
