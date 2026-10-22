@@ -215,7 +215,7 @@ When you name a place from this section that the row does not mention, add to `m
 
 # 10. Model listings (imitate the structure and quality, never copy the facts)
 
-In both examples, every feature, descriptive adjective ("charming", "bright", "updated", "light-filled") and distance was given by the owner. Never reuse them unless the row says so. "Ready for move-in" in Example 2 is used only because that home is available now: never write it when the Available date is in the future.
+In both examples, every feature, descriptive adjective ("charming", "bright", "updated", "light-filled") and distance was given by the owner. Never reuse them unless the row says so. "Ready for move-in" in Example 2 is used only because that home is available now: never write it (or "ready now", "move-in ready") when the Available date is in the future.
 
 ## Example 1 — North Park bungalow
 

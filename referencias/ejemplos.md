@@ -2,7 +2,7 @@
 
 Two examples of well-written Grow listings. Use them as a reference for structure, tone and level of detail — not to copy word for word. All properties and data are fictional.
 
-In both examples, every feature, descriptive adjective ("charming", "bright", "updated", "light-filled") and distance was given by the owner. Never reuse them for another property unless that property's data says so ("Descriptive words need data" and "Distance rule" in `marca.md`).
+In both examples, every feature, descriptive adjective ("charming", "bright", "updated", "light-filled") and distance was given by the owner. Never reuse them for another property unless that property's data says so ("Descriptive words need data" and "Distance rule" in `marca.md`). "Ready for move-in" in Example 2 is used only because that home is available now: never write it (or "ready now", "move-in ready") when the available date is in the future.
 
 ---
 
