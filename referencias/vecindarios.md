@@ -1,6 +1,6 @@
 # San Diego Neighborhoods — Reference Sheet
 
-> ⚠️ General, approximate information for creative context only. Measure actual distances for each property (see the distance rule in `marca.md`, section 7). Rent ranges are rough estimates and must be verified before publishing. Never use this sheet to describe who "should" live somewhere (Fair Housing).
+> ⚠️ General, approximate information for creative context only. This sheet has no distances or travel times on purpose: use only the distances the user gives for each property (see the distance rule in `marca.md`, section 7). Rent ranges are rough estimates and must be verified before publishing. Never use this sheet to describe who "should" live somewhere (Fair Housing).
 
 ---
 
@@ -20,9 +20,9 @@
 - **Character:** Relaxed beach community with an active boardwalk, surf culture and a lively dining and nightlife area on Garnet Avenue.
 - **Local references:** Crystal Pier, the Ocean Front Walk boardwalk, Kate Sessions Park (city and bay views), Mission Bay paths.
 - **Typical housing:** Beach cottages, condos, duplexes, apartment complexes.
-- **Commute:** Close to I-5; about 15–20 minutes to downtown without traffic.
+- **Commute:** Close to I-5.
 - **Approx. rents:** 1 bed ~$2,300–2,900 · 2 bed ~$3,100–4,000
-- **Keywords for copy:** [X] blocks from the beach, ocean breeze, bike-friendly, sunset views, beach lifestyle.
+- **Keywords for copy:** close to the beach, ocean breeze, bike-friendly, sunset views, beach lifestyle.
 
 ## 3. La Jolla
 
@@ -40,7 +40,7 @@
 - **Character:** Vibrant, diverse urban neighborhood with a strong community identity, restaurants, local shops and a major medical center.
 - **Local references:** The Hillcrest sign, Hillcrest Farmers Market (Sundays), UC San Diego Medical Center – Hillcrest, Balboa Park (directly south), Mission Hills (directly west).
 - **Typical housing:** Mid-rise apartments, condos, classic 1920s–1950s buildings.
-- **Commute:** Next to SR-163 and I-8; about 10 minutes to downtown and the airport.
+- **Commute:** Next to SR-163 and I-8; close to downtown and the airport.
 - **Approx. rents:** 1 bed ~$2,100–2,700 · 2 bed ~$2,800–3,500
 - **Keywords for copy:** central, farmers market, near Balboa Park, close to hospitals.
 
@@ -52,7 +52,7 @@
 - **Typical housing:** Newer apartment complexes with amenities (pools, gyms, garages), condos, townhomes.
 - **Commute:** At the junction of I-8, I-805, I-15 and SR-163; multiple trolley stations.
 - **Approx. rents:** 1 bed ~$2,300–2,900 · 2 bed ~$3,000–3,800
-- **Keywords for copy:** central location, resort-style amenities, trolley access, [X] miles from Fashion Valley, river trail.
+- **Keywords for copy:** central location, resort-style amenities, trolley access, close to Fashion Valley, river trail.
 
 ---
 

@@ -68,7 +68,7 @@ Catch the ocean breeze from your private balcony. The beach is 3 blocks away. Th
 - 1 assigned garage space
 
 **The neighborhood**
-Crystal Pier and the boardwalk are 3 blocks west. Garnet Avenue's restaurants and shops are 0.4 miles away, and the Mission Bay bike paths are about 1 mile south. I-5 access makes the drive downtown about 15–20 minutes outside rush hour.
+Crystal Pier and the boardwalk are 3 blocks west. Garnet Avenue's restaurants and shops are 0.4 miles away, and the Mission Bay bike paths are about 1 mile south. I-5 is close by for the drive downtown.
 
 **Lease details**
 - Rent: $2,650/month
@@ -79,7 +79,7 @@ Crystal Pier and the boardwalk are 3 blocks west. Garnet Avenue's restaurants an
 - Utilities: resident pays SDG&E and internet; water and trash included
 - Parking: 1 assigned garage space
 
-**Apply in minutes**
+**Apply online**
 Tour this home and apply online at growpm.example/rentals or text (619) 555-0123.
 
 *Grow Property Management · CA DRE #00000000 · Equal Housing Opportunity*

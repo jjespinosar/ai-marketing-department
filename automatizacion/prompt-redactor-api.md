@@ -207,7 +207,7 @@ This information is general and approximate. Use it only for flavor and place na
 - **North Park** (central, northeast of Balboa Park): Craftsman bungalows, Spanish-style homes and newer apartments; independent coffee shops, craft breweries, restaurants and arts scene. Places: University Avenue and 30th Street corridors, North Park Observatory theater, North Park Thursday Market, Balboa Park. Close to SR-163, I-805, I-15; Rapid 215 bus.
 - **Pacific Beach ("PB")** (coastal, north of Mission Bay): relaxed beach community with a boardwalk, surf culture and a lively dining area on Garnet Avenue. Places: Crystal Pier, Ocean Front Walk boardwalk, Kate Sessions Park, Mission Bay paths. Close to I-5.
 - **La Jolla** (coastal, north of Pacific Beach): seaside community with dramatic coastline and a village center of boutiques and restaurants; research and medical institutions. Places: La Jolla Cove, Children's Pool seals, La Jolla Shores, Torrey Pines State Natural Reserve, UC San Diego, Scripps. Near I-5 and the UC San Diego Blue Line trolley extension.
-- **Hillcrest** (Uptown, north of Balboa Park): vibrant urban neighborhood with restaurants, local shops and a major medical center. Places: the Hillcrest sign, Hillcrest Farmers Market (Sundays), UC San Diego Medical Center – Hillcrest, Balboa Park, Mission Hills. Next to SR-163 and I-8.
+- **Hillcrest** (Uptown, north of Balboa Park): vibrant urban neighborhood with restaurants, local shops and a major medical center. Places: the Hillcrest sign, Hillcrest Farmers Market (Sundays), UC San Diego Medical Center – Hillcrest, Balboa Park, Mission Hills. Next to SR-163 and I-8; close to downtown and the airport.
 - **Mission Valley** (central, along I-8 and the San Diego River): modern hub with newer apartment communities, major shopping centers and easy access to the city. Places: Fashion Valley, Westfield Mission Valley, Snapdragon Stadium, SDSU Mission Valley River Park, San Diego River trail, Green Line trolley. At the junction of I-8, I-805, I-15 and SR-163.
 
 Any other neighborhood: describe only what the row says, keep the neighborhood section general (no invented places), and add to `missing_optional`: `Local references for [neighborhood] (shops, parks, transit)`.
@@ -267,7 +267,7 @@ Catch the ocean breeze from your private balcony. The beach is 3 blocks away. Th
 - 1 assigned garage space
 
 **The neighborhood**
-Crystal Pier and the boardwalk are 3 blocks west. Garnet Avenue's restaurants and shops are 0.4 miles away, and the Mission Bay bike paths are about 1 mile south. I-5 access makes the drive downtown about 15–20 minutes outside rush hour.
+Crystal Pier and the boardwalk are 3 blocks west. Garnet Avenue's restaurants and shops are 0.4 miles away, and the Mission Bay bike paths are about 1 mile south. I-5 is close by for the drive downtown.
 
 **Lease details**
 - Rent: $2,650/month
@@ -278,7 +278,7 @@ Crystal Pier and the boardwalk are 3 blocks west. Garnet Avenue's restaurants an
 - Utilities: resident pays SDG&E and internet; water and trash included
 - Parking: 1 assigned garage space
 
-**Apply in minutes**
+**Apply online**
 Tour this home and apply online at growpm.example/rentals or text (619) 555-0123.
 
 *Grow Property Management · CA DRE #00000000 · Equal Housing Opportunity*
