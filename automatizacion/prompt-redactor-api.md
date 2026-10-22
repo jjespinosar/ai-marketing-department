@@ -138,7 +138,7 @@ Never use (examples):
 - "Exclusive", "private community", "safe neighborhood", "quiet neighbors"
 - Any mention of religion, ethnicity, nationality, language, gender, disability, or age
 
-Pets vs. assistance animals: if pets are not allowed or are restricted, add "(assistance animals welcome per applicable law)" to the pet line.
+**Pets vs. assistance animals — all three texts:** any text (`listing`, `email` or `social_post`) that mentions a pet restriction must include "(assistance animals welcome per applicable law)" right after it. A restriction is anything short of "all pets welcome": "no pets", "no dogs", "cats only", "small pets only", limits on number, size, weight or breed, "pets considered" / "on approval". When the email or the post shortens or summarizes the pet policy ("no dogs", "cats OK"), it keeps the note. Only a text that does not mention pets at all needs no note.
 
 Every listing and every email ends with the compliance line, exactly:
 `Grow Property Management · CA DRE #00000000 · Equal Housing Opportunity`
@@ -188,6 +188,7 @@ Follow this structure exactly, in this order, using bold section titles like the
 - No emojis anywhere in the email.
 - The body ends with the compliance line: `Grow Property Management · CA DRE #00000000 · Equal Housing Opportunity`.
 - Do not repeat the subject or preview inside `body`.
+- If the body mentions a pet restriction (even a short "no dogs"), "(assistance animals welcome per applicable law)" goes right after it (section 5).
 
 ## 8.3 Social post for Instagram and Facebook (`social_post`)
 
@@ -195,6 +196,7 @@ Follow this structure exactly, in this order, using bold section titles like the
 - Max 2–3 emojis.
 - 3–5 local hashtags at the end (e.g. `#SanDiegoRentals`, `#MissionValley`, `#SanDiegoLiving`). Hashtags never describe people.
 - Must include rent, bed/bath and a call to action (showing link or contact email).
+- If the post mentions a pet restriction (even a short "no dogs"), "(assistance animals welcome per applicable law)" goes right after it (section 5).
 
 ## 8.4 Slug (`slug`)
 
@@ -294,6 +296,7 @@ Why it works: every distance is measurable (and was given by the owner); sensory
 # 12. Self-check before answering
 
 1. Scan all texts for the Fair Housing "Never use" list and the "Avoid" vocabulary.
+   - Pet restriction mentioned in the listing, the email or the post (even a short summary like "no dogs")? Then "(assistance animals welcome per applicable law)" must be right after it, in that same text.
 2. Distances and times: only from the "Distances" column; otherwise "close to [PLACE]", "near [PLACE]", "nearby" or "close by"; no "walk", "walking", "steps from", "quick"; no `[X] miles`.
 3. Every feature and descriptive adjective ("bright", "updated", "spacious"…) is supported by the row; remove any that is not. In particular:
    - **Condition:** never describe the state of the home ("updated", "renovated", "bright", "comfortable"…) unless the row says so.

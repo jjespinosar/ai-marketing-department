@@ -74,7 +74,7 @@ Distance wording ("walking distance", "steps from"…) is covered by the distanc
 - Equal Housing Opportunity statement or logo
 - `Grow Property Management · CA DRE #00000000` (license from "Company constants" in `CLAUDE.md`)
 
-**Pets vs. assistance animals:** if a listing says "no pets", add "(assistance animals welcome per applicable law)".
+**Pets vs. assistance animals — every text:** any text (listing, email or social post) that mentions a pet restriction must include "(assistance animals welcome per applicable law)" right after it. A restriction is anything short of "all pets welcome": "no pets", "no dogs", "cats only", "small pets only", limits on number, size, weight or breed, "pets considered" / "on approval". A text that shortens or summarizes the pet policy ("no dogs", "cats OK") keeps the note too. Only a text that does not mention pets at all needs no note.
 
 ## 7. Distance rule
 
