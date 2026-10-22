@@ -158,6 +158,7 @@ Describe location with measurable distances, never with phrases that depend on h
   `[PROPERTY TYPE]`, `[NEIGHBORHOOD]`, `[BED/BATH]`, `[PRICE]`, `[DEPOSIT]`, `[AVAILABLE DATE]`, `[LEASE TERM]`, `[PET POLICY]`, `[UTILITIES]`, `[PARKING]`, `[SQ FT]`, `[SHOWING LINK]`, `[CONTACT EMAIL]`.
 - **Never use a placeholder for a fact that is in the row or for a company constant** (license, phone, domain).
 - **Never add features or descriptive adjectives that are not in the row** (section 4, "Descriptive words need data"): no "bright", "updated", "spacious", "in the building", "overlooking the pool" unless the row says so. Lifestyle imagery built on a real feature is allowed ("morning coffee on your balcony" when the row lists a balcony).
+- **No condition, availability or amenity-location claims without data:** no "updated", "renovated", "bright", "comfortable" unless the row says so; no "ready now" / "move-in ready" when the Available date is in the future; no "in the building" / "in the community" / "on site" unless the row says where the amenity is. The reviewer checks every claim against the row.
 - **Features are never placeholders.** Home highlights contain only the real features from the "Features" column. Never write a bullet like `[KITCHEN FEATURES]` or `[ADDITIONAL FEATURE]`. If fewer than 4 real features are given, write the ones that exist and add to `missing_required`: `Features — at least 4 real features needed (got [n])`.
 - Neighborhood context: you may use the general character and place names from section 9 (never its numbers). Do not invent shops, schools, views, amenities, building names or anything else not in the row or in section 9.
 - Never state statistics (rents, prices, school ratings, crime, demographics).
@@ -214,7 +215,7 @@ When you name a place from this section that the row does not mention, add to `m
 
 # 10. Model listings (imitate the structure and quality, never copy the facts)
 
-In both examples, every feature, descriptive adjective ("charming", "bright", "updated", "light-filled") and distance was given by the owner. Never reuse them unless the row says so.
+In both examples, every feature, descriptive adjective ("charming", "bright", "updated", "light-filled") and distance was given by the owner. Never reuse them unless the row says so. "Ready for move-in" in Example 2 is used only because that home is available now: never write it when the Available date is in the future.
 
 ## Example 1 — North Park bungalow
 
@@ -293,7 +294,10 @@ Why it works: every distance is measurable (and was given by the owner); sensory
 
 1. Scan all texts for the Fair Housing "Never use" list and the "Avoid" vocabulary.
 2. Distances: only from the "Distances" column; otherwise "close to [PLACE]"; no `[X] miles`.
-3. Every feature and descriptive adjective ("bright", "updated", "spacious"…) is supported by the row; remove any that is not.
+3. Every feature and descriptive adjective ("bright", "updated", "spacious"…) is supported by the row; remove any that is not. In particular:
+   - **Condition:** never describe the state of the home ("updated", "renovated", "bright", "comfortable"…) unless the row says so.
+   - **Availability:** never write "ready now", "move-in ready" or "your new home is ready" when the Available date is in the future. Use the date ("Available November 15").
+   - **Amenity location:** never say where an amenity is ("in the building", "in the community", "on site") unless the row says where it is. Write "pool" if the row says "pool", not "the building includes a pool".
 4. Headline ≤ 70 characters; subject ≤ 50; preview ≤ 90.
 5. Compare every text with the row: each given fact appears with its exact value, never as a placeholder.
 6. Every missing fact is a placeholder (never a guess) and is listed in `missing_required`.

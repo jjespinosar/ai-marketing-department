@@ -36,7 +36,7 @@ Fila con Status   →   1. Busca filas READY
    - `system`: el contenido de `prompt-revisor-api.md` desde `=== SYSTEM PROMPT START ===`.
    - mensaje del usuario: dos bloques, `ORIGINAL DATA:` con la fila **tal como viene de la hoja** (sin resumir ni traducir) y `REDACTOR JSON:` con la respuesta completa de la llamada 1.
    - Recomendado: temperatura 0.
-6. **Parse JSON** de la respuesta del revisor (`verdict`, `publish_ready`, `issues`, `required_pending`, `summary_es`).
+6. **Parse JSON** de la respuesta del revisor (`claims`, `verdict`, `publish_ready`, `issues`, `required_pending`, `summary_es`).
 7. **Google Docs.** Se crea un documento (idealmente desde una plantilla) con: el anuncio, el correo (asunto, preview y cuerpo), el post, la tabla de `issues` y los pendientes.
 8. **Gmail.** Se envía un correo al revisor humano con `summary_es` en el cuerpo y el enlace al documento.
 9. **Cierre.** Make escribe el enlace en `Doc link` y pone `Status = DONE`.
@@ -59,7 +59,7 @@ Si cualquier paso falla (error de la API, JSON inválido, Docs o Gmail no respon
 |---------|----------------|
 | `plantilla-propiedades.csv` | Solo la fila de encabezados. Se importa a Google Sheets para crear la hoja de propiedades. Tiene una columna por cada dato de la checklist de `lanzar-propiedad`, más `ID`, `Status`, `Doc link` y `Error`. |
 | `prompt-redactor-api.md` | System prompt autosuficiente (en inglés) para la primera llamada. Incluye lo necesario de `CLAUDE.md`, `marca.md`, `ejemplos.md`, `vecindarios.md`, `redactor.md` y la skill. Recibe una fila y devuelve **solo JSON**: `slug`, `listing`, `email` (`subject`, `preview`, `body`), `social_post`, `missing_required`, `missing_optional`. |
-| `prompt-revisor-api.md` | System prompt autosuficiente (en inglés) para la segunda llamada. Incluye lo necesario de `CLAUDE.md`, `marca.md`, `ejemplos.md` y `revisor.md`. Recibe la fila original y el JSON del redactor, y devuelve **solo JSON**: `verdict`, `publish_ready`, `issues`, `required_pending`, `summary_es`. |
+| `prompt-revisor-api.md` | System prompt autosuficiente (en inglés) para la segunda llamada. Incluye lo necesario de `CLAUDE.md`, `marca.md`, `ejemplos.md` y `revisor.md`. Recibe la fila original y el JSON del redactor, y devuelve **solo JSON**: `claims` (cada afirmación sobre la propiedad, con `supported` y `source`), `verdict`, `publish_ready`, `issues`, `required_pending`, `summary_es`. |
 | `README.md` | Este archivo. |
 
 ## Cosas importantes
