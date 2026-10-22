@@ -100,10 +100,16 @@ Los blueprints no guardan la programación: se configura en Make, en el *Schedul
 
 | Escenario | Intervalo | Cuánto procesa por ejecución |
 |-----------|-----------|------------------------------|
-| Formulario a Hoja | [INTERVALO] | Hasta 5 respuestas nuevas |
-| Escenario principal | [INTERVALO] | 1 fila `READY` |
+| Formulario a Hoja | Cada 240 minutos (4 horas) | Hasta 5 respuestas nuevas |
+| Escenario principal | Cada 240 minutos (4 horas) | 1 fila `READY` |
 
-Como el escenario principal toma una sola fila por ejecución, procesa como máximo **una propiedad por intervalo**. Si llegan varias a la vez, se procesan en orden en las ejecuciones siguientes. Para que una respuesta del formulario tarde lo menos posible, conviene que los dos escenarios corran con un intervalo parecido.
+Qué significa en la práctica:
+
+- **Una propiedad cada 4 horas, como máximo (unas 6 al día).** El escenario principal toma una sola fila por ejecución. Si llegan varias a la vez, se procesan en orden en las ejecuciones siguientes: la tercera fila en espera tarda hasta 12 horas.
+- **Una respuesta del formulario puede tardar hasta unas 8 horas en llegar al correo:** hasta 4 horas hasta que "Formulario a Hoja" la copia a la hoja, y hasta otras 4 hasta que el escenario principal la toma.
+- **Las filas escritas a mano** con `READY` solo esperan al escenario principal: hasta 4 horas.
+- Si llegan más de 5 respuestas entre dos ejecuciones de "Formulario a Hoja", las demás se copian en la ejecución siguiente.
+- Para procesar algo ya, usa **Run once** en Make. Primero en "Formulario a Hoja" si la propiedad viene del formulario, y después en el escenario principal.
 
 ## Estados (`Status`)
 
