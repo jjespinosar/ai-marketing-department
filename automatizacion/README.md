@@ -8,8 +8,8 @@ El flujo usa **dos escenarios de Make**. Sus blueprints (exportados de Make) est
 
 | Escenario en Make | Blueprint | Qué hace |
 |-------------------|-----------|----------|
-| **Formulario a Hoja** | `blueprint-formulario-a-hoja.json` | Copia cada respuesta nueva del formulario a la hoja de propiedades, con `Status = READY`. |
-| **Integration Google Sheets** (escenario principal) | `blueprint-escenario-principal.json` | Toma una fila `READY`, llama al redactor y al revisor, crea el Google Doc, actualiza la fila y envía el correo. |
+| **Formulario a Hoja** | `blueprint-formulario-a-hoja.example.json` | Copia cada respuesta nueva del formulario a la hoja de propiedades, con `Status = READY`. |
+| **Integration Google Sheets** (escenario principal) | `blueprint-escenario-principal.example.json` | Toma una fila `READY`, llama al redactor y al revisor, crea el Google Doc, actualiza la fila y envía el correo. |
 
 ## El flujo completo
 
@@ -128,12 +128,12 @@ Qué significa en la práctica:
 | `plantilla-propiedades.csv` | Solo la fila de encabezados. Se importa a Google Sheets para crear la hoja de propiedades. Tiene una columna por cada dato de la checklist de `lanzar-propiedad`, más `ID`, `Status`, `Doc link` y `Error`. |
 | `prompt-redactor-api.md` | System prompt autosuficiente (en inglés) para la primera llamada. Incluye lo necesario de `CLAUDE.md`, `marca.md`, `ejemplos.md`, `vecindarios.md`, `redactor.md` y la skill. Recibe una fila y devuelve **solo JSON**: `slug`, `listing`, `email` (`subject`, `preview`, `body`), `social_post`, `missing_required`, `missing_optional`. |
 | `prompt-revisor-api.md` | System prompt autosuficiente (en inglés) para la segunda llamada. Incluye lo necesario de `CLAUDE.md`, `marca.md`, `ejemplos.md` y `revisor.md`. Recibe la fila original y el JSON del redactor, y devuelve **solo JSON**: `claims` (cada afirmación sobre la propiedad, con `supported` y `source`), `verdict`, `publish_ready`, `issues`, `required_pending`, `summary_es`. |
-| `blueprint-formulario-a-hoja.json` | Exportación del escenario "Formulario a Hoja". |
-| `blueprint-escenario-principal.json` | Exportación del escenario principal. Lleva dentro una copia de los dos prompts. |
+| `blueprint-formulario-a-hoja.example.json` | Exportación del escenario "Formulario a Hoja", con los datos privados reemplazados por marcadores. |
+| `blueprint-escenario-principal.example.json` | Exportación del escenario principal, con los datos privados reemplazados por marcadores. Lleva dentro una copia de los dos prompts. |
 | `limitaciones-conocidas.md` | Lo que el flujo todavía hace mal, detectado en las pruebas. Léelo antes de publicar. |
 | `README.md` | Este archivo. |
 
-**Sobre los blueprints:** sirven para recrear los escenarios con *Import Blueprint* en Make. No incluyen la clave de la API ni las credenciales: al importarlos hay que volver a elegir las conexiones de Google Sheets, Google Docs, Gmail y Anthropic. Sí incluyen el ID de la hoja de cálculo, el ID de la carpeta de Drive y la dirección del correo de destino. Si cambian, hay que actualizarlos en los módulos.
+**Sobre los blueprints:** sirven para recrear los escenarios con *Import Blueprint* en Make. No incluyen la clave de la API ni las credenciales: al importarlos hay que volver a elegir las conexiones de Google Sheets, Google Docs, Gmail y Anthropic. Las copias `.example.json` no llevan datos privados: el ID de la hoja, el ID de la carpeta de Drive, el correo de destino, los IDs de las conexiones y de las estructuras de datos están reemplazados por marcadores (`[SPREADSHEET_ID]`, `[DRIVE_FOLDER_ID]`, `[YOUR_EMAIL]`, `[GOOGLE_CONNECTION_ID]`…). Después de importarlas hay que poner los valores propios en los módulos. Los blueprints originales (sin `.example`) se quedan solo en local: están en `.gitignore`.
 
 ## Cosas importantes
 

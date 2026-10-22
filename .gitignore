@@ -18,3 +18,7 @@ desktop.ini
 # Secrets
 .env
 .env.*
+
+# Make blueprints with private IDs (publish only the *.example.json copies)
+automatizacion/blueprint-escenario-principal.json
+automatizacion/blueprint-formulario-a-hoja.json
