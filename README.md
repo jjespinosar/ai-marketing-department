@@ -86,7 +86,7 @@ All rules live in [CLAUDE.md](CLAUDE.md) and [referencias/](referencias/). File-
 | Every security deposit triggered a legal review. | The legal rule had no clear scope. | Legal review only for texts that explain or interpret laws, rights or fee rules. Stating the property's amounts does not count. |
 | Claude wrapped the JSON in ```` ```json ```` despite the instruction. | The model does not always follow format instructions. | Deterministic cleanup in Make: a `replace()` removes the markers before parsing. |
 | Responses were cut off (Max Tokens). | The token limit was too low for the output. | Adjusted limits: 4,000 tokens for the writer, 8,000 for the reviewer. |
-| The scenario failed when there were no `READY` rows. | Make passes an empty bundle to the next modules. | A filter after the search. (Not yet in the exported blueprint.) |
+| The scenario failed when there were no `READY` rows. | Make passes an empty bundle to the next modules. | A filter after the search, so the scenario stops when no row is found. (The `.example.json` blueprint in this repo was exported before the filter was added.) |
 | The email summarized the pet policy as "no dogs" without the assistance-animal note. The AI approved it. A human caught it. | The rule was written only for listings. | The note is now required in every text that mentions a pet restriction. If it is missing, the reviewer marks it CRITICAL. |
 | Dates like 05/11 were ambiguous. | The form returns DD/MM/YYYY. | Make converts the date to "November 5, 2026" before it reaches Claude. |
 

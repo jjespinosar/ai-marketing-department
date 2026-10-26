@@ -86,7 +86,7 @@ Todas las reglas están en [CLAUDE.md](CLAUDE.md) y en [referencias/](referencia
 | Cada depósito de garantía pedía revisión legal. | La regla legal no tenía un alcance claro. | Revisión legal solo para textos que explican o interpretan leyes, derechos o reglas de cargos. Indicar los montos de la propiedad no cuenta. |
 | Claude envolvía el JSON en ```` ```json ```` pese a la instrucción. | El modelo no siempre cumple las instrucciones de formato. | Limpieza determinista en Make: un `replace()` quita las marcas antes de leer el JSON. |
 | Respuestas cortadas (Max Tokens). | El límite de tokens era bajo para la respuesta. | Límites ajustados: 4.000 tokens para el redactor y 8.000 para el revisor. |
-| El escenario fallaba cuando no había filas `READY`. | Make pasa un paquete vacío a los módulos siguientes. | Un filtro después de la búsqueda. (Todavía no está en el blueprint exportado.) |
+| El escenario fallaba cuando no había filas `READY`. | Make pasa un paquete vacío a los módulos siguientes. | Un filtro después de la búsqueda, para que el escenario se detenga si no encuentra ninguna fila. (El blueprint `.example.json` de este repositorio se exportó antes de agregar el filtro.) |
 | El correo resumía la política de mascotas como "no dogs", sin la nota de animales de asistencia. La IA lo aprobó. Lo detectó una persona. | La regla solo estaba escrita para los anuncios. | La nota ahora es obligatoria en todo texto que mencione una restricción de mascotas. Si falta, el revisor lo marca como CRITICAL. |
 | Fechas como 05/11 eran ambiguas. | El formulario devuelve DD/MM/AAAA. | Make convierte la fecha a "November 5, 2026" antes de que llegue a Claude. |
 
