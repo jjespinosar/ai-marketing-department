@@ -71,7 +71,7 @@ Todas las reglas están en [CLAUDE.md](CLAUDE.md) y en [referencias/](referencia
 
 **Manejo de errores.** Los módulos del redactor y del revisor (llamadas a la API y lectura del JSON) tienen rutas de error que escriben el motivo en la columna `Error` de la hoja. El estado de la fila (`READY` → `PROCESSING` → `DONE` / `ERROR`) evita que una fila se procese dos veces. Los puntos débiles de esta configuración están documentados en [automatizacion/README.md](automatizacion/README.md).
 
-**Formulario con código de acceso.** Cada respuesta del formulario dispara llamadas pagadas a la API y un correo. El formulario pide un código de acceso, y el código no se copia a la hoja. [PLACEHOLDER: cómo se valida el código]
+**Formulario con código de acceso.** Cada respuesta del formulario dispara llamadas pagadas a la API y un correo. El formulario tiene una primera sección con un código de acceso, validado por Google Forms (expresión regular, coincidencia exacta). Sin el código no se puede continuar. El código no está guardado en este repositorio, y tampoco se copia a la hoja. Limitación: es un código compartido, no una autenticación individual; hay que cambiarlo si se filtra.
 
 ## Qué falló y cómo lo arreglé
 

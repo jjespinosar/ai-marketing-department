@@ -71,7 +71,7 @@ All rules live in [CLAUDE.md](CLAUDE.md) and [referencias/](referencias/). File-
 
 **Error handling.** The writer and reviewer modules (API calls and JSON parsing) have error routes that write the reason in the sheet's `Error` column. The row status (`READY` → `PROCESSING` → `DONE` / `ERROR`) prevents a row from being processed twice. Known gaps in this setup are documented in [automatizacion/README.md](automatizacion/README.md).
 
-**Form with an access code.** Every form answer triggers paid API calls and an email. The form asks for an access code, and the code is not copied to the sheet. [PLACEHOLDER: how the code is checked]
+**Form with an access code.** Every form answer triggers paid API calls and an email. The form has a first section with an access code, validated by Google Forms (regular expression, exact match). Respondents cannot continue without it. The code is not stored in this repository, and it is not copied to the sheet. Limitation: it is a shared code, not individual authentication; it should be changed if it leaks.
 
 ## What broke and how I fixed it
 
