@@ -6,7 +6,7 @@ An AI team that writes and reviews rental listings, emails and social posts, bui
 
 [PLACEHOLDER: video demo link]
 
-[PLACEHOLDER: screenshot]
+![Main Make scenario: search a READY row, Claude writer, Claude reviewer, Google Docs, update the row and send the Gmail, with error routes](docs/images/make-scenario.png)
 
 ---
 
