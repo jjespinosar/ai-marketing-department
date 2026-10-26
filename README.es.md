@@ -146,7 +146,12 @@ Guía paso a paso: [automatizacion/README.md](automatizacion/README.md).
 
 ## Sobre mí
 
-[PLACEHOLDER]
+Soy Juan. Me gusta hacer que las herramientas de IA funcionen en procesos reales de negocio. Hice este proyecto para aprender y para mostrar cómo diseño, pruebo y corrijo agentes y automatizaciones de IA.
+
+- Experiencia: 5 años en SEO · Head of Off-Page SEO en Kommo (desde 2022) · creé MindLaw, un SaaS legal con IA multimodelo, y mi propia herramienta de auditoría SEO con IA
+- Ubicación: Ecuador · UTC−5 (America/Guayaquil)
+- Idiomas: español (nativo) · inglés (B2, escrito)
+- Contacto: [LinkedIn](https://www.linkedin.com/in/juan-jos%C3%A9-espinosa-ruiz/) · jjespinosar95@gmail.com
 
 ---
 

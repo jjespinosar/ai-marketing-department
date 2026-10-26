@@ -146,7 +146,12 @@ Step-by-step guide: [automatizacion/README.md](automatizacion/README.md) (Spanis
 
 ## About me
 
-[PLACEHOLDER]
+I'm Juan, a builder who likes making AI tools work in real business processes. I built this project to learn and to show how I design, test and fix AI agents and automations.
+
+- Background: 5 years in SEO · Head of Off-Page SEO at Kommo (since 2022) · built MindLaw, a legal SaaS with multi-model AI, and my own AI-powered SEO audit tool
+- Location: Ecuador · UTC−5 (America/Guayaquil)
+- Languages: Spanish (native) · English (B2, written)
+- Contact: [LinkedIn](https://www.linkedin.com/in/juan-jos%C3%A9-espinosa-ruiz/) · jjespinosar95@gmail.com
 
 ---
 
