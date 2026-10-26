@@ -100,7 +100,7 @@ Only what can be checked in this repository:
 - 14 numbered rules in `CLAUDE.md`.
 - 21 commits between October 13 and October 22, 2026, before this case study.
 - Test outputs in [salidas/](salidas/): 4 drafts, 5 review reports, 1 research report and 1 content plan. One of the reviews is a trap test: a listing with deliberate Fair Housing violations, which the reviewer rejected with 5 critical issues.
-- Cost per property: [PLACEHOLDER]
+- Cost per property: approx. USD 0.08 per property (writer + reviewer, Claude Sonnet 4.5). Based on token counts from test runs and ~USD 1.01 total API spend during development (October 2026). At 20 properties/month: ~USD 1.60.
 
 ## Known limitations
 

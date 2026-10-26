@@ -100,7 +100,7 @@ Solo lo que se puede comprobar en este repositorio:
 - 14 reglas numeradas en `CLAUDE.md`.
 - 21 commits entre el 13 y el 22 de octubre de 2026, antes de este caso de estudio.
 - Pruebas en [salidas/](salidas/): 4 borradores, 5 informes de revisión, 1 informe de investigación y 1 plan de contenido. Una de las revisiones es una prueba trampa: un anuncio con violaciones de Fair Housing a propósito, que el revisor rechazó con 5 problemas críticos.
-- Costo por propiedad: [PLACEHOLDER]
+- Costo por propiedad: aprox. USD 0,08 por propiedad (redactor + revisor, Claude Sonnet 4.5). Basado en el conteo de tokens de las pruebas y en un gasto total de ~USD 1,01 en la API durante el desarrollo (octubre de 2026). Con 20 propiedades al mes: ~USD 1,60.
 
 ## Limitaciones conocidas
 
