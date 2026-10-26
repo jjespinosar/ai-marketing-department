@@ -4,8 +4,6 @@ Un equipo de IA que escribe y revisa anuncios de alquiler, correos y posts, hech
 
 🇺🇸 [English](README.md) · 🇪🇸 Español
 
-[PLACEHOLDER: video demo link]
-
 ![Escenario principal de Make: busca una fila READY, Claude redactor, Claude revisor, Google Docs, actualiza la fila y envía el Gmail, con rutas de error](docs/images/make-scenario.png)
 
 ---
